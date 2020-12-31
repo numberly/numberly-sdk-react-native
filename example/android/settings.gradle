@@ -1,0 +1,6 @@
+rootProject.name = 'NumberlyPluginExample'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+
+include ':numberly.sdk.reactnative'
+project(':numberly.sdk.reactnative').projectDir = new File(rootProject.projectDir, '../../android')

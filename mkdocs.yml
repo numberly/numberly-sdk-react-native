@@ -1,0 +1,98 @@
+
+# Project information
+site_name: Numberly - React Native
+site_url: https://numberly.github.io/numberly-sdk-react-native
+site_description: Numberly React Native SDK Docs.
+
+# Repository
+repo_name: numberly/numberly-sdk-react-native
+repo_url: https://github.com/numberly/numberly-sdk-react-native
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2020 - present Numberly.
+
+# Configuration
+theme:
+  name: material
+
+  include_search_page: false
+  search_index_only: true
+
+  language: en
+  features:
+    # - navigation.tabs
+    # - navigation.instant
+    - navigation.sections
+
+  favicon: assets/favicon.ico
+
+  icon:
+    logo: material/library
+    repo: fontawesome/brands/github
+  palette:
+    scheme: preference
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+
+markdown_extensions:
+  - meta:
+  - toc:
+      permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
+  - attr_list:
+  - markdown.extensions.admonition:
+  - pymdownx.betterem:
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list:
+  - markdown.extensions.footnotes:
+  - markdown.extensions.meta:
+  - pymdownx.superfences:
+      preserve_tabs: true
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite:
+  - pymdownx.magiclink:
+      repo_url_shortener: false
+      repo_url_shorthand: false
+      social_url_shorthand: false
+      social_url_shortener: false
+      user: numberly
+      repo: numberly-sdk-react-native
+  - pymdownx.tilde:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.mark:
+  - pymdownx.details:
+  - pymdownx.tabbed:
+  - pymdownx.keys:
+  - pymdownx.smartsymbols:
+  - markdown_include.include:
+      base_path: docs
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/numberly
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+extra_css:
+  - 'assets/css/custom.css'
+
+# Page tree
+nav:
+    - 🚀 Getting Started: index.md
+    - Push Notifications: push-notifications.md
+    - API Reference: 'api-reference/index.html'
