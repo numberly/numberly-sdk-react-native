@@ -16,7 +16,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* NumberlyPluginExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NumberlyPluginExampleTests.m */; };
 		38F8DDD32594CFDA00BDA1B0 /* Numberly.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38F8DDD22594CFDA00BDA1B0 /* Numberly.plist */; };
-		4C39C56BAD484C67AA576FFA /* libPods-NumberlyPluginExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3E69C5B9553B26FBA2DF04 /* libPods-NumberlyPluginExample.a */; };
+		4B0EFAFEB00449E751896091 /* libPods-NumberlyPluginExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6714D3E6EB1AB04C2C8918 /* libPods-NumberlyPluginExample.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -52,12 +52,12 @@
 		2D02E4901E0B4A5D006451C7 /* NumberlyPluginExample-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NumberlyPluginExample-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38F8DDD22594CFDA00BDA1B0 /* Numberly.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Numberly.plist; sourceTree = "<group>"; };
 		38F8DDD82594D83000BDA1B0 /* NumberlyPluginExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = NumberlyPluginExample.entitlements; path = NumberlyPluginExample/NumberlyPluginExample.entitlements; sourceTree = "<group>"; };
-		47F7ED3B7971BE374F7B8635 /* Pods-NumberlyPluginExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumberlyPluginExample.debug.xcconfig"; path = "Target Support Files/Pods-NumberlyPluginExample/Pods-NumberlyPluginExample.debug.xcconfig"; sourceTree = "<group>"; };
+		67CC2EC56569D3589F59DA06 /* Pods-NumberlyPluginExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumberlyPluginExample.release.xcconfig"; path = "Target Support Files/Pods-NumberlyPluginExample/Pods-NumberlyPluginExample.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = NumberlyPluginExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CA3E69C5B9553B26FBA2DF04 /* libPods-NumberlyPluginExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NumberlyPluginExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E00ACF0FDA8BF921659E2F9A /* Pods-NumberlyPluginExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumberlyPluginExample.release.xcconfig"; path = "Target Support Files/Pods-NumberlyPluginExample/Pods-NumberlyPluginExample.release.xcconfig"; sourceTree = "<group>"; };
+		AD6714D3E6EB1AB04C2C8918 /* libPods-NumberlyPluginExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NumberlyPluginExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F9EC4675899105708CC75BB2 /* Pods-NumberlyPluginExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumberlyPluginExample.debug.xcconfig"; path = "Target Support Files/Pods-NumberlyPluginExample/Pods-NumberlyPluginExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C39C56BAD484C67AA576FFA /* libPods-NumberlyPluginExample.a in Frameworks */,
+				4B0EFAFEB00449E751896091 /* libPods-NumberlyPluginExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +130,7 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				CA3E69C5B9553B26FBA2DF04 /* libPods-NumberlyPluginExample.a */,
+				AD6714D3E6EB1AB04C2C8918 /* libPods-NumberlyPluginExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,8 +138,8 @@
 		6B9684456A2045ADE5A6E47E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				47F7ED3B7971BE374F7B8635 /* Pods-NumberlyPluginExample.debug.xcconfig */,
-				E00ACF0FDA8BF921659E2F9A /* Pods-NumberlyPluginExample.release.xcconfig */,
+				F9EC4675899105708CC75BB2 /* Pods-NumberlyPluginExample.debug.xcconfig */,
+				67CC2EC56569D3589F59DA06 /* Pods-NumberlyPluginExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -203,14 +203,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "NumberlyPluginExample" */;
 			buildPhases = (
-				4F0A6FC082772762E3E4C96C /* [CP] Check Pods Manifest.lock */,
+				D7BA8574C254F4344A2262ED /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				C1D60D28B925C94BD88E79D7 /* [CP] Copy Pods Resources */,
-				16FC1F98B6B6CAF447B79E1F /* [CP] Embed Pods Frameworks */,
+				BD01E8B83B92BD9A060DC018 /* [CP] Embed Pods Frameworks */,
+				3A481BD615451DD6A6D897CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -356,7 +356,39 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		16FC1F98B6B6CAF447B79E1F /* [CP] Embed Pods Frameworks */ = {
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		3A481BD615451DD6A6D897CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NumberlyPluginExample/Pods-NumberlyPluginExample-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NumberlyPluginExample/Pods-NumberlyPluginExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD01E8B83B92BD9A060DC018 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,21 +406,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NumberlyPluginExample/Pods-NumberlyPluginExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		4F0A6FC082772762E3E4C96C /* [CP] Check Pods Manifest.lock */ = {
+		D7BA8574C254F4344A2262ED /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -408,24 +426,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C1D60D28B925C94BD88E79D7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NumberlyPluginExample/Pods-NumberlyPluginExample-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NumberlyPluginExample/Pods-NumberlyPluginExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -562,7 +562,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47F7ED3B7971BE374F7B8635 /* Pods-NumberlyPluginExample.debug.xcconfig */;
+			baseConfigurationReference = F9EC4675899105708CC75BB2 /* Pods-NumberlyPluginExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -587,7 +587,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E00ACF0FDA8BF921659E2F9A /* Pods-NumberlyPluginExample.release.xcconfig */;
+			baseConfigurationReference = 67CC2EC56569D3589F59DA06 /* Pods-NumberlyPluginExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

@@ -5,8 +5,6 @@
 //  Copyright © 2020-present Numberly. All rights reserved.
 //
 
-@import UserNotifications;
-
 #import "NumberlyPlugin.h"
 #import "RNNumberlyEventEmitter.h"
 
@@ -78,7 +76,8 @@ RCT_EXPORT_METHOD(pushRegisterForRemoteNotifications)
 {
   [Numberly.push registerForRemoteNotifications:@[@(NBLPushAuthorizationOptionAlert),
                                                   @(NBLPushAuthorizationOptionSound),
-                                                  @(NBLPushAuthorizationOptionBadge)]];
+                                                  @(NBLPushAuthorizationOptionBadge)]
+                              completionHandler:nil];
 }
 
 RCT_EXPORT_METHOD(clearBadge) {
@@ -89,13 +88,12 @@ RCT_REMAP_METHOD(pushAreNotificationsEnabled,
                  pushAreNotificationsEnabled_resolver:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
 {
-    [UNUserNotificationCenter.currentNotificationCenter
-        getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
-        switch (settings.authorizationStatus) {
-            case UNAuthorizationStatusDenied:
+    [Numberly.push areNotificationsEnabledWithCompletionHandler:^(enum NBLPushAuthorizationStatus result) {
+        switch (result) {
+            case NBLPushAuthorizationStatusDenied:
                 resolve(@NO);
                 break;
-            case UNAuthorizationStatusNotDetermined:
+            case NBLPushAuthorizationStatusNotDetermined:
                 resolve(nil);
                 break;
             default:
