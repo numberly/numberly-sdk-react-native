@@ -7,7 +7,7 @@
 
 @import Foundation;
 
-@import React;
+#import <React/RCTEventEmitter.h>
 
 #if __has_include("Numberly.h")
 #import "Numberly.h"
