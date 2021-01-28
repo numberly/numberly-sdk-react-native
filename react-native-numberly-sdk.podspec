@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
 
 
   s.dependency "React-Core"
-  s.dependency "Numberly", '~> 1.2'
+  s.dependency "Numberly", '1.1.1'
 end
